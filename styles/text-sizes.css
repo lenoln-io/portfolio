@@ -1,0 +1,19 @@
+.title-lg {
+    font-size: var(--title-lg);
+}
+
+.title-md {
+    font-size: var(--title-md);
+}
+
+.title-sm {
+    font-size: var(--title-sm);
+}
+
+.text-md {
+    font-size: var(--text-md);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}

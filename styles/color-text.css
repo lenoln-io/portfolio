@@ -1,0 +1,23 @@
+.text-gray-100 {
+    color: var(--base-gray-100);
+}
+
+.text-gray-200 {
+    color: var(--base-gray-200);
+}
+
+.text-gray-300 {
+    color: var(--base-gray-300);
+}
+
+.text-gray-400 {
+    color: var(--base-gray-400);
+}
+
+.text-gray-500 {
+    color: var(--base-gray-500);
+}
+
+.text-gray-600 {
+    color: var(--base-gray-600);
+}

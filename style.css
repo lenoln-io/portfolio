@@ -1,0 +1,156 @@
+:root {
+    font-size: 62.5%;
+
+    --main-red: #e3646e;
+    --main-purple: #bb72e9;
+    --main-blue: #3996db;
+    --main-green: #82bc4f;
+    --main-yellow: #eabd5f;
+
+    --base-gray-100: #0d0e11;
+    --base-gray-200: #16181d;
+    --base-gray-300: #292c34;
+    --base-gray-400: #878ea1;
+    --base-gray-500: #c0c4ce;
+    --base-gray-600: #e2e4e9;
+
+    --title-font-family: 'Asap', monospace;
+    --title-lg: 5.6rem;
+    --title-md: 2.4rem;
+    --title-sm: 1.6rem;
+
+    --line-height: 120%;
+
+    --subtitle-font-family: 'Inconsolata', sans-serif;
+    --subtitle-font-regular: 400;
+    --subtitle-font-size: 2rem;
+
+    --text-font-family: 'Maven Pro', sans-serif;
+    --text-font-regular: 400;
+    --text-md: 1.6rem;
+    --text-sm: 1.4rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#intro {
+    background-image: url('assets/bg_intro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.pt-120px {
+    padding-top: 12rem;
+}
+
+.w-680px {
+    width: 68rem !important;
+}
+
+.pb-80px {
+    padding-bottom: 8rem;
+}
+
+.avatar {
+    position: relative;
+    width: 11rem;
+    height: 11rem;
+    margin: 0 auto;
+}
+
+.profile-img {
+    max-width: 100%;
+    max-height: 100%;
+
+    border-radius: 50%;
+    border: 0.4rem solid;
+    padding: 0.4rem;
+
+    transition-property: border;
+    animation: border_blink 800ms ease-in-out infinite alternate;
+}
+
+.code-img {
+    position: absolute;
+    right: -3%;
+    bottom: 0;
+    width: 3.5rem;
+    height: 3.3rem;
+
+    & path {
+        fill: var(--main-green);
+        stroke: #0d0e11;
+        stroke-width: 4rem;
+    }
+}
+
+.subtitle {
+    font-size: var(--subtitle-font-size);
+    font-family: var(--subtitle-font-family);
+}
+
+.name {
+    color: var(--main-blue);
+}
+
+.role {
+    font-family: var(--title-font-family);
+}
+
+.description {
+    font-family: var(--text-font-family);
+}
+
+.tech-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 0.8rem;
+}
+
+.tech-wrapper {
+    background-color: var(--base-gray-300);
+    padding-inline: 1.6rem;
+    padding-block: 0.8rem;
+    border-radius: 99rem;
+}
+
+.tech-wrapper span {
+    font-size: var(--text-md);
+    font-family: var(--text-font-family);
+    font-weight: 400;
+}
+
+.html path {
+    fill: var(--main-red);
+}
+
+.css path {
+    fill: var(--main-blue);
+}
+
+.javascript path {
+    fill: var(--main-yellow);
+}
+
+.bootstrap path {
+    fill: var(--main-purple);
+}
+
+.nodejs path {
+    fill: var(--main-green);
+}
+
+@keyframes border_blink {
+    from {
+        border-color: var(--main-blue);
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
